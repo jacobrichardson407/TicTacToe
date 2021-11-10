@@ -10,7 +10,7 @@ namespace TicTacToe.Classes
     {
         //making array and    
 
-        public static string[] array = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+        public static string[] array = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
         public static int choice; // this will hold the integer choice that the user inputs
 
@@ -45,8 +45,8 @@ namespace TicTacToe.Classes
                 //player one turn
                 do
                 {
-                    Console.WriteLine("                           Player One's turn! Enter a number of where you would like to play!");
-                    choice = int.Parse(Console.ReadLine());
+                   Console.WriteLine("                           Player One's turn! Enter a number of where you would like to play!");
+                   choice = int.Parse(Console.ReadLine());
 
 
                     if (choice == int.Parse("1"))
@@ -58,7 +58,6 @@ namespace TicTacToe.Classes
                         TTTBoard();
                         playerOneTurn = false;
                         playerTwoTurn = true;
-                        GameWinner();
                     }
                     else if (choice == int.Parse("2"))
                     {
@@ -69,7 +68,6 @@ namespace TicTacToe.Classes
                         TTTBoard();
                         playerOneTurn = false;
                         playerTwoTurn = true;
-                        GameWinner();
                     }
 
                     else if (choice == int.Parse("3"))
@@ -81,7 +79,6 @@ namespace TicTacToe.Classes
                         TTTBoard();
                         playerOneTurn = false;
                         playerTwoTurn = true;
-                        GameWinner();
                     }
                     else if (choice == int.Parse("4"))
                     {
@@ -92,7 +89,6 @@ namespace TicTacToe.Classes
                         TTTBoard();
                         playerOneTurn = false;
                         playerTwoTurn = true;
-                        GameWinner();
                     }
                     else if (choice == int.Parse("5"))
                     {
@@ -103,7 +99,7 @@ namespace TicTacToe.Classes
                         TTTBoard();
                         playerOneTurn = false;
                         playerTwoTurn = true;
-                        GameWinner();
+                        
                     }
                     else if (choice == int.Parse("6"))
                     {
@@ -114,7 +110,7 @@ namespace TicTacToe.Classes
                         TTTBoard();
                         playerOneTurn = false;
                         playerTwoTurn = true;
-                        GameWinner();
+                        
                     }
 
                     else if (choice == int.Parse("7"))
@@ -126,7 +122,7 @@ namespace TicTacToe.Classes
                         TTTBoard();
                         playerOneTurn = false;
                         playerTwoTurn = true;
-                        GameWinner();
+                        
                     }
                     else if (choice == int.Parse("8"))
                     {
@@ -137,7 +133,7 @@ namespace TicTacToe.Classes
                         TTTBoard();
                         playerOneTurn = false;
                         playerTwoTurn = true;
-                        GameWinner();
+                        
                     }
                     else if (choice == int.Parse("9"))
                     {
@@ -148,9 +144,9 @@ namespace TicTacToe.Classes
                         TTTBoard();
                         playerOneTurn = false;
                         playerTwoTurn = true;
-                        GameWinner();
+                        
                     }
-
+                    GameWinner();
                 } while (playerOneTurn);
                 //player 2 turn
                 do
@@ -166,7 +162,7 @@ namespace TicTacToe.Classes
                         TTTBoard();
                         playerOneTurn = true;
                         playerTwoTurn = false;
-                        GameWinner();
+                        
                     }
                     else if (choice == int.Parse("2"))
                     {
@@ -177,7 +173,7 @@ namespace TicTacToe.Classes
                         TTTBoard();
                         playerOneTurn = true;
                         playerTwoTurn = false;
-                        GameWinner();
+                        
                     }
 
                     else if (choice == int.Parse("3"))
@@ -189,7 +185,7 @@ namespace TicTacToe.Classes
                         TTTBoard();
                         playerOneTurn = true;
                         playerTwoTurn = false;
-                        GameWinner();
+                        
                     }
                     else if (choice == int.Parse("4"))
                     {
@@ -200,7 +196,7 @@ namespace TicTacToe.Classes
                         TTTBoard();
                         playerOneTurn = true;
                         playerTwoTurn = false;
-                        GameWinner();
+                        
                     }
                     else if (choice == int.Parse("5"))
                     {
@@ -211,7 +207,7 @@ namespace TicTacToe.Classes
                         TTTBoard();
                         playerOneTurn = true;
                         playerTwoTurn = false;
-                        GameWinner();
+                        
                     }
                     else if (choice == int.Parse("6"))
                     {
@@ -222,7 +218,7 @@ namespace TicTacToe.Classes
                         TTTBoard();
                         playerOneTurn = true;
                         playerTwoTurn = false;
-                        GameWinner();
+                        
                     }
 
                     else if (choice == int.Parse("7"))
@@ -234,7 +230,7 @@ namespace TicTacToe.Classes
                         TTTBoard();
                         playerOneTurn = true;
                         playerTwoTurn = false;
-                        GameWinner();
+                        
                     }
                     else if (choice == int.Parse("8"))
                     {
@@ -245,7 +241,7 @@ namespace TicTacToe.Classes
                         TTTBoard();
                         playerOneTurn = true;
                         playerTwoTurn = false;
-                        GameWinner();
+                        
                     }
                     else if (choice == int.Parse("9"))
                     {
@@ -256,9 +252,9 @@ namespace TicTacToe.Classes
                         TTTBoard();
                         playerOneTurn = true;
                         playerTwoTurn = false;
-                        GameWinner();
+                        
                     }
-
+                    GameWinner();
                 } while (playerTwoTurn);
             }
 
@@ -268,39 +264,42 @@ namespace TicTacToe.Classes
         private static void TTTBoard()
         {
             string board = $@"
-                                                  |                   |                    
-                                                  |                   |                    
-                                       {array[1]}          |         {array[2]}         |         {array[3]}     
-                                                  |                   |                    
-                               ___________________|___________________|___________________ 
-                                                  |                   |                    
-                                       {array[4]}          |         {array[5]}         |         {array[6]}    
-                                                  |                   |                    
-                               ___________________|___________________|___________________ 
-                                                  |                   |                    
-                                                  |                   |                    
-                                       {array[7]}          |         {array[8]}         |         {array[9]}    
-                                                  |                   |                    
-                                                  |                   |                    ";
+                               ___________________________________________________________ 
+                              |                   |                   |                   | 
+                              |                   |                   |                   | 
+                              |         {array[1]}         |         {array[2]}         |         {array[3]}         |   
+                              |                   |                   |                   |
+                              |___________________|___________________|___________________| 
+                              |                   |                   |                   | 
+                              |                   |                   |                   | 
+                              |         {array[4]}         |         {array[5]}         |         {array[6]}         |
+                              |                   |                   |                   | 
+                              |___________________|___________________|___________________| 
+                              |                   |                   |                   | 
+                              |                   |                   |                   | 
+                              |         {array[7]}         |         {array[8]}         |         {array[9]}         |
+                              |                   |                   |                   | 
+                              |___________________|___________________|___________________| ";
             Console.WriteLine(board);
+
             array[choice] = PlayerMarker();
         }
 
         public static void GameWinner()
         {
-            
+            //top row check
             if (array[1].Contains(PlayerOne.PlayerOneIcon()) && array[2].Contains(PlayerOne.PlayerOneIcon()) && array[3].Contains(PlayerOne.PlayerOneIcon()))
             {
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Green;
                 string winner = @"
                                        Player One Wins!!!
-                        __          _______ _   _ _   _ ______ _____  
-                        \ \        / /_   _| \ | | \ | |  ____|  __ \ 
-                         \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
-                          \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
-                           \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
-                            \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
+                                    __          _______ _   _ _   _ ______ _____  
+                                    \ \        / /_   _| \ | | \ | |  ____|  __ \ 
+                                     \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
+                                      \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
+                                       \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
+                                        \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
             }
@@ -309,28 +308,29 @@ namespace TicTacToe.Classes
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Red;
                 string winner = @"
-                                       Player Two Wins!!!
-                        __          _______ _   _ _   _ ______ _____  
-                        \ \        / /_   _| \ | | \ | |  ____|  __ \ 
-                         \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
-                          \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
-                           \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
-                            \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
+                                                   Player Two Wins!!!
+                                    __          _______ _   _ _   _ ______ _____  
+                                    \ \        / /_   _| \ | | \ | |  ____|  __ \ 
+                                     \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
+                                      \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
+                                       \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
+                                        \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
             }
+            // middle row check
             if (array[4].Contains(PlayerOne.PlayerOneIcon()) && array[5].Contains(PlayerOne.PlayerOneIcon()) && array[6].Contains(PlayerOne.PlayerOneIcon()))
             {
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Green;
                 string winner = @"
-                                       Player One Wins!!!
-                        __          _______ _   _ _   _ ______ _____  
-                        \ \        / /_   _| \ | | \ | |  ____|  __ \ 
-                         \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
-                          \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
-                           \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
-                            \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
+                                                   Player One Wins!!!
+                                    __          _______ _   _ _   _ ______ _____  
+                                    \ \        / /_   _| \ | | \ | |  ____|  __ \ 
+                                     \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
+                                      \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
+                                       \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
+                                        \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
             }
@@ -339,13 +339,199 @@ namespace TicTacToe.Classes
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Red;
                 string winner = @"
-                                       Player Two Wins!!!
-                        __          _______ _   _ _   _ ______ _____  
-                        \ \        / /_   _| \ | | \ | |  ____|  __ \ 
-                         \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
-                          \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
-                           \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
-                            \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
+                                                   Player Two Wins!!!
+                                    __          _______ _   _ _   _ ______ _____  
+                                    \ \        / /_   _| \ | | \ | |  ____|  __ \ 
+                                     \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
+                                      \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
+                                       \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
+                                        \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
+                Console.WriteLine(winner);
+                TTTBoard();
+            }
+            //bottom row check
+            if (array[7].Contains(PlayerOne.PlayerOneIcon()) && array[8].Contains(PlayerOne.PlayerOneIcon()) && array[9].Contains(PlayerOne.PlayerOneIcon()))
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
+                string winner = @"
+                                                   Player One Wins!!!
+                                    __          _______ _   _ _   _ ______ _____  
+                                    \ \        / /_   _| \ | | \ | |  ____|  __ \ 
+                                     \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
+                                      \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
+                                       \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
+                                        \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
+                Console.WriteLine(winner);
+                TTTBoard();
+            }
+            else if (array[7].Contains(PlayerTwo.PlayerTwoIcon()) && array[8].Contains(PlayerTwo.PlayerTwoIcon()) && array[9].Contains(PlayerTwo.PlayerTwoIcon()))
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                string winner = @"
+                                                   Player Two Wins!!!
+                                    __          _______ _   _ _   _ ______ _____  
+                                    \ \        / /_   _| \ | | \ | |  ____|  __ \ 
+                                     \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
+                                      \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
+                                       \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
+                                        \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
+                Console.WriteLine(winner);
+                TTTBoard();
+            }
+            //left coloumn check
+            if (array[1].Contains(PlayerOne.PlayerOneIcon()) && array[4].Contains(PlayerOne.PlayerOneIcon()) && array[7].Contains(PlayerOne.PlayerOneIcon()))
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
+                string winner = @"
+                                                   Player One Wins!!!
+                                    __          _______ _   _ _   _ ______ _____  
+                                    \ \        / /_   _| \ | | \ | |  ____|  __ \ 
+                                     \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
+                                      \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
+                                       \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
+                                        \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
+                Console.WriteLine(winner);
+                TTTBoard();
+            }
+            else if (array[1].Contains(PlayerTwo.PlayerTwoIcon()) && array[4].Contains(PlayerTwo.PlayerTwoIcon()) && array[7].Contains(PlayerTwo.PlayerTwoIcon()))
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                string winner = @"
+                                                   Player Two Wins!!!
+                                    __          _______ _   _ _   _ ______ _____  
+                                    \ \        / /_   _| \ | | \ | |  ____|  __ \ 
+                                     \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
+                                      \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
+                                       \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
+                                        \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
+                Console.WriteLine(winner);
+                TTTBoard();
+            }
+            //middle column check
+            if (array[2].Contains(PlayerOne.PlayerOneIcon()) && array[5].Contains(PlayerOne.PlayerOneIcon()) && array[8].Contains(PlayerOne.PlayerOneIcon()))
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
+                string winner = @"
+                                                   Player One Wins!!!
+                                    __          _______ _   _ _   _ ______ _____  
+                                    \ \        / /_   _| \ | | \ | |  ____|  __ \ 
+                                     \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
+                                      \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
+                                       \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
+                                        \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
+                Console.WriteLine(winner);
+                TTTBoard();
+            }
+            else if (array[2].Contains(PlayerTwo.PlayerTwoIcon()) && array[5].Contains(PlayerTwo.PlayerTwoIcon()) && array[8].Contains(PlayerTwo.PlayerTwoIcon()))
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                string winner = @"
+                                                   Player Two Wins!!!
+                                    __          _______ _   _ _   _ ______ _____  
+                                    \ \        / /_   _| \ | | \ | |  ____|  __ \ 
+                                     \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
+                                      \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
+                                       \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
+                                        \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
+                Console.WriteLine(winner);
+                TTTBoard();
+            }
+            //right column check
+            if (array[3].Contains(PlayerOne.PlayerOneIcon()) && array[6].Contains(PlayerOne.PlayerOneIcon()) && array[9].Contains(PlayerOne.PlayerOneIcon()))
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
+                string winner = @"
+                                                   Player One Wins!!!
+                                    __          _______ _   _ _   _ ______ _____  
+                                    \ \        / /_   _| \ | | \ | |  ____|  __ \ 
+                                     \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
+                                      \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
+                                       \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
+                                        \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
+                Console.WriteLine(winner);
+                TTTBoard();
+            }
+            else if (array[3].Contains(PlayerTwo.PlayerTwoIcon()) && array[6].Contains(PlayerTwo.PlayerTwoIcon()) && array[9].Contains(PlayerTwo.PlayerTwoIcon()))
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                string winner = @"
+                                                   Player Two Wins!!!
+                                    __          _______ _   _ _   _ ______ _____  
+                                    \ \        / /_   _| \ | | \ | |  ____|  __ \ 
+                                     \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
+                                      \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
+                                       \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
+                                        \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
+                Console.WriteLine(winner);
+                TTTBoard();
+            }
+            //Top left diagonal
+            if (array[1].Contains(PlayerOne.PlayerOneIcon()) && array[5].Contains(PlayerOne.PlayerOneIcon()) && array[9].Contains(PlayerOne.PlayerOneIcon()))
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
+                string winner = @"
+                                                   Player One Wins!!!
+                                    __          _______ _   _ _   _ ______ _____  
+                                    \ \        / /_   _| \ | | \ | |  ____|  __ \ 
+                                     \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
+                                      \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
+                                       \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
+                                        \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
+                Console.WriteLine(winner);
+                TTTBoard();
+            }
+            else if (array[1].Contains(PlayerTwo.PlayerTwoIcon()) && array[5].Contains(PlayerTwo.PlayerTwoIcon()) && array[9].Contains(PlayerTwo.PlayerTwoIcon()))
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                string winner = @"
+                                                   Player Two Wins!!!
+                                    __          _______ _   _ _   _ ______ _____  
+                                    \ \        / /_   _| \ | | \ | |  ____|  __ \ 
+                                     \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
+                                      \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
+                                       \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
+                                        \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
+                Console.WriteLine(winner);
+                TTTBoard();
+            }
+            //Top right diagonal
+            if (array[3].Contains(PlayerOne.PlayerOneIcon()) && array[5].Contains(PlayerOne.PlayerOneIcon()) && array[7].Contains(PlayerOne.PlayerOneIcon()))
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
+                string winner = @"
+                                                   Player One Wins!!!
+                                    __          _______ _   _ _   _ ______ _____  
+                                    \ \        / /_   _| \ | | \ | |  ____|  __ \ 
+                                     \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
+                                      \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
+                                       \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
+                                        \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
+                Console.WriteLine(winner);
+                TTTBoard();
+            }
+            else if (array[3].Contains(PlayerTwo.PlayerTwoIcon()) && array[5].Contains(PlayerTwo.PlayerTwoIcon()) && array[7].Contains(PlayerTwo.PlayerTwoIcon()))
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                string winner = @"
+                                                   Player Two Wins!!!
+                                    __          _______ _   _ _   _ ______ _____  
+                                    \ \        / /_   _| \ | | \ | |  ____|  __ \ 
+                                     \ \  /\  / /  | | |  \| |  \| | |__  | |__) |
+                                      \ \/  \/ /   | | | . ` | . ` |  __| |  _  / 
+                                       \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
+                                        \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
             }
@@ -373,7 +559,7 @@ namespace TicTacToe.Classes
                 }
             }
         }
-        
+
         //sets player ones icon to the X marker, sets player twos icon to the O marker
         public static string PlayerMarker()
         {

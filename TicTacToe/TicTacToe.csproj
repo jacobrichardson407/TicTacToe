@@ -47,7 +47,6 @@
     <Compile Include="Classes\Game.cs" />
     <Compile Include="Classes\PlayerOne.cs" />
     <Compile Include="Classes\PlayerTwo.cs" />
-    <Compile Include="Classes\Utilities.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
