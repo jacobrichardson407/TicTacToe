@@ -10,14 +10,8 @@ namespace TicTacToe.Classes
     {
         public static string PlayerOneIcon()
         {
-
-            string xIcon = @"
-__   __
-\ \ / /
- \ V / 
-  > <  
- / . \ 
-/_/ \_\";
+            string xIcon = "X";
+            Console.Beep(750, 30);
             return xIcon;
         }
     }

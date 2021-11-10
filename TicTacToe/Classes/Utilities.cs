@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace TicTacToe.Classes
 {
-    public class PlayerTwo
+    public static class Utilities
     {
-        public static string PlayerTwoIcon()
+        public static string ChangeColor(string value, ConsoleColor color)
         {
-            string oIcon = "O";
-            return oIcon;
+            Console.ForegroundColor = color;
+            return value;
         }
     }
 }
