@@ -14,4 +14,3 @@ D:\ElevenFiftyProjects\113SD\TicTacToe\TicTacToe_Tests\obj\Debug\TicTacToe_Tests
 D:\ElevenFiftyProjects\113SD\TicTacToe\TicTacToe_Tests\obj\Debug\TicTacToe_Tests.csproj.CoreCompileInputs.cache
 D:\ElevenFiftyProjects\113SD\TicTacToe\TicTacToe_Tests\obj\Debug\TicTacToe_Tests.dll
 D:\ElevenFiftyProjects\113SD\TicTacToe\TicTacToe_Tests\obj\Debug\TicTacToe_Tests.pdb
-D:\ElevenFiftyProjects\113SD\TicTacToe\TicTacToe_Tests\obj\Debug\TicTacToe_Tests.csproj.CopyComplete

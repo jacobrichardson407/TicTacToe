@@ -8,11 +8,9 @@ namespace TicTacToe.Classes
 {
     public class Game
     {
-        //making array and   
+        //making array and    
 
-        //by default I am providing 0-9 where no use of zero  
-
-        public static int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        public static string[] array = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
         public static int choice; // this will hold the integer choice that the user inputs
 
@@ -35,41 +33,215 @@ namespace TicTacToe.Classes
         // run everything in here
         public static void Run()
         {
+            choice = int.Parse(array[choice]);
             Console.BackgroundColor = ConsoleColor.Gray;
             Console.Clear();
             ConsoleText();
             // call empty board to display
-            EmptyBoard();
-            // if player one's turn, set array choice = user input, set player ones turn to false, set player twos turn to true
-
-            if (playerOneTurn)
+            TTTBoard();
+            while (playerOneTurn || playerTwoTurn)
             {
-                Console.WriteLine("                           Player One's turn! Enter a number of where you would like to play!");
-                choice = int.Parse(Console.ReadLine());
+                // if player one's turn, set array choice = user input, set player ones turn to false, set player twos turn to true
+                //player one turn
+                do
+                {
+                    Console.WriteLine("                           Player One's turn! Enter a number of where you would like to play!");
+                    choice = int.Parse(Console.ReadLine());
 
-                if (choice == 1)
+                    if (choice == int.Parse("1"))
+                    {
+                        PlayerMarker();
+                        array.SetValue(PlayerOne.PlayerOneIcon(), int.Parse(array[1]));
+                        // call console text
+                        ConsoleText();
+                        TTTBoard();
+                        playerOneTurn = false;
+                        playerTwoTurn = true;
+                    }
+                    else if (choice == int.Parse("2"))
+                    {
+                        PlayerMarker();
+                        array.SetValue(PlayerOne.PlayerOneIcon(), int.Parse(array[2]));
+                        // call console text
+                        ConsoleText();
+                        TTTBoard();
+                        playerOneTurn = false;
+                        playerTwoTurn = true;
+                    }
+
+                    else if (choice == int.Parse("3"))
+                    {
+                        PlayerMarker();
+                        array.SetValue(PlayerOne.PlayerOneIcon(), int.Parse(array[3]));
+                        // call console text
+                        ConsoleText();
+                        TTTBoard();
+                        playerOneTurn = false;
+                        playerTwoTurn = true;
+                    }
+                    else if (choice == int.Parse("4"))
+                    {
+                        PlayerMarker();
+                        array.SetValue(PlayerOne.PlayerOneIcon(), int.Parse(array[4]));
+                        // call console text
+                        ConsoleText();
+                        TTTBoard();
+                        playerOneTurn = false;
+                        playerTwoTurn = true;
+                    }
+                    else if (choice == int.Parse("5"))
+                    {
+                        PlayerMarker();
+                        array.SetValue(PlayerOne.PlayerOneIcon(), int.Parse(array[5]));
+                        // call console text
+                        ConsoleText();
+                        TTTBoard();
+                        playerOneTurn = false;
+                        playerTwoTurn = true;
+                    }
+                    else if (choice == int.Parse("6"))
+                    {
+                        PlayerMarker();
+                        array.SetValue(PlayerOne.PlayerOneIcon(), int.Parse(array[6]));
+                        // call console text
+                        ConsoleText();
+                        TTTBoard();
+                        playerOneTurn = false;
+                        playerTwoTurn = true;
+                    }
+
+                    else if (choice == int.Parse("7"))
+                    {
+                        PlayerMarker();
+                        array.SetValue(PlayerOne.PlayerOneIcon(), int.Parse(array[7]));
+                        // call console text
+                        ConsoleText();
+                        TTTBoard();
+                        playerOneTurn = false;
+                        playerTwoTurn = true;
+                    }
+                    else if (choice == int.Parse("8"))
+                    {
+                        PlayerMarker();
+                        array.SetValue(PlayerOne.PlayerOneIcon(), int.Parse(array[8]));
+                        // call console text
+                        ConsoleText();
+                        TTTBoard();
+                        playerOneTurn = false;
+                        playerTwoTurn = true;
+                    }
+                    else if (choice == int.Parse("9"))
+                    {
+                        PlayerMarker();
+                        array.SetValue(PlayerOne.PlayerOneIcon(), int.Parse(array[9]));
+                        // call console text
+                        ConsoleText();
+                        TTTBoard();
+                        playerOneTurn = false;
+                        playerTwoTurn = true;
+                    }
+
+                } while (playerOneTurn);
+                //player 2 turn
+                do
                 {
-                    // call console text
-                    ConsoleText();
-                    TTTBoard();
-                }
-                playerOneTurn = false;
-                playerTwoTurn = true;
-                if (choice == 2)
-                {
-                    string output = array[1].ToString();
-                    output = PlayerOne.PlayerOneIcon();
-                    // call console text
-                    ConsoleText();
-                    TTTBoard();
-                }
-                playerOneTurn = false;
-                playerTwoTurn = true;
-            }
-            if (playerTwoTurn)
-            {
-                Console.WriteLine("                           Player Two's turn! Enter a number of where you would like to play!");
-                choice = int.Parse(Console.ReadLine());
+                    Console.WriteLine("                           Player Two's turn! Enter a number of where you would like to play!");
+                    choice = int.Parse(Console.ReadLine());
+
+                    if (choice == int.Parse("1"))
+                    {
+                        PlayerMarker();
+                        array.SetValue(PlayerTwo.PlayerTwoIcon(), int.Parse(array[1]));
+                        // call console text
+                        ConsoleText();
+                        TTTBoard();
+                        playerOneTurn = true;
+                        playerTwoTurn = false;
+                    }
+                    else if (choice == int.Parse("2"))
+                    {
+                        PlayerMarker();
+                        array.SetValue(PlayerTwo.PlayerTwoIcon(), int.Parse(array[2]));
+                        // call console text
+                        ConsoleText();
+                        TTTBoard();
+                        playerOneTurn = true;
+                        playerTwoTurn = false;
+                    }
+
+                    else if (choice == int.Parse("3"))
+                    {
+                        PlayerMarker();
+                        array.SetValue(PlayerTwo.PlayerTwoIcon(), int.Parse(array[3]));
+                        // call console text
+                        ConsoleText();
+                        TTTBoard();
+                        playerOneTurn = true;
+                        playerTwoTurn = false;
+                    }
+                    else if (choice == int.Parse("4"))
+                    {
+                        PlayerMarker();
+                        array.SetValue(PlayerTwo.PlayerTwoIcon(), int.Parse(array[4]));
+                        // call console text
+                        ConsoleText();
+                        TTTBoard();
+                        playerOneTurn = true;
+                        playerTwoTurn = false;
+                    }
+                    else if (choice == int.Parse("5"))
+                    {
+                        PlayerMarker();
+                        array.SetValue(PlayerTwo.PlayerTwoIcon(), int.Parse(array[5]));
+                        // call console text
+                        ConsoleText();
+                        TTTBoard();
+                        playerOneTurn = true;
+                        playerTwoTurn = false;
+                    }
+                    else if (choice == int.Parse("6"))
+                    {
+                        PlayerMarker();
+                        array.SetValue(PlayerTwo.PlayerTwoIcon(), int.Parse(array[6]));
+                        // call console text
+                        ConsoleText();
+                        TTTBoard();
+                        playerOneTurn = true;
+                        playerTwoTurn = false;
+                    }
+
+                    else if (choice == int.Parse("7"))
+                    {
+                        PlayerMarker();
+                        array.SetValue(PlayerTwo.PlayerTwoIcon(), int.Parse(array[7]));
+                        // call console text
+                        ConsoleText();
+                        TTTBoard();
+                        playerOneTurn = true;
+                        playerTwoTurn = false;
+                    }
+                    else if (choice == int.Parse("8"))
+                    {
+                        PlayerMarker();
+                        array.SetValue(PlayerTwo.PlayerTwoIcon(), int.Parse(array[8]));
+                        // call console text
+                        ConsoleText();
+                        TTTBoard();
+                        playerOneTurn = true;
+                        playerTwoTurn = false;
+                    }
+                    else if (choice == int.Parse("9"))
+                    {
+                        PlayerMarker();
+                        array.SetValue(PlayerTwo.PlayerTwoIcon(), int.Parse(array[9]));
+                        // call console text
+                        ConsoleText();
+                        TTTBoard();
+                        playerOneTurn = true;
+                        playerTwoTurn = false;
+                    }
+
+                } while (playerTwoTurn);
             }
 
         }
@@ -79,38 +251,20 @@ namespace TicTacToe.Classes
         {
             Console.WriteLine($"                                                  |                   |                    ");
             Console.WriteLine($"                                                  |                   |                    ");
-            Console.WriteLine($"                                       {array[0]}          |         {array[1]}         |         {array[2]}     ");
+            Console.WriteLine($"                                       {array[1]}          |         {array[2]}         |         {array[3]}     ");
             Console.WriteLine($"                                                  |                   |                    ");
             Console.WriteLine($"                               ___________________|___________________|___________________ ");
             Console.WriteLine($"                                                  |                   |                    ");
             Console.WriteLine($"                                                  |                   |                    ");
-            Console.WriteLine($"                                       {array[3]}          |         {array[4]}         |         {array[5]}    ");
+            Console.WriteLine($"                                       {array[4]}          |         {array[5]}         |         {array[6]}    ");
             Console.WriteLine($"                                                  |                   |                    ");
             Console.WriteLine($"                               ___________________|___________________|___________________ ");
             Console.WriteLine($"                                                  |                   |                    ");
             Console.WriteLine($"                                                  |                   |                    ");
-            Console.WriteLine($"                                       {array[6]}          |         {array[7]}         |         {array[8]}    ");
+            Console.WriteLine($"                                       {array[7]}          |         {array[8]}         |         {array[9]}    ");
             Console.WriteLine($"                                                  |                   |                    ");
             Console.WriteLine($"                                                  |                   |                    ");
-            array[choice].ToString(PlayerMarker());
-        }
-        private static void EmptyBoard()
-        {
-            Console.WriteLine($"                                                  |                   |                    ");
-            Console.WriteLine($"                                                  |                   |                    ");
-            Console.WriteLine($"                                       {array[0]}          |         {array[1]}         |         {array[2]}     ");
-            Console.WriteLine($"                                                  |                   |                    ");
-            Console.WriteLine($"                               ___________________|___________________|___________________ ");
-            Console.WriteLine($"                                                  |                   |                    ");
-            Console.WriteLine($"                                                  |                   |                    ");
-            Console.WriteLine($"                                       {array[3]}          |         {array[4]}         |         {array[5]}    ");
-            Console.WriteLine($"                                                  |                   |                    ");
-            Console.WriteLine($"                               ___________________|___________________|___________________ ");
-            Console.WriteLine($"                                                  |                   |                    ");
-            Console.WriteLine($"                                                  |                   |                    ");
-            Console.WriteLine($"                                       {array[6]}          |         {array[7]}         |         {array[8]}    ");
-            Console.WriteLine($"                                                  |                   |                    ");
-            Console.WriteLine($"                                                  |                   |                    ");
+            array[choice] = PlayerMarker();
         }
 
         // colors the text in the console
@@ -134,7 +288,8 @@ namespace TicTacToe.Classes
                 }
             }
         }
-
+        
+        //sets player ones icon to the X marker, sets player twos icon to the O marker
         public static string PlayerMarker()
         {
             string marker;
@@ -146,10 +301,7 @@ namespace TicTacToe.Classes
             {
                 return marker = PlayerTwo.PlayerTwoIcon();
             }
-            else
-            {
-                return null;
-            }
+            return null;
         }
 
     }

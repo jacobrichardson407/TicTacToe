@@ -8,13 +8,16 @@ namespace TicTacToe_Tests
     [TestClass]
     public class UnitTest1 : Game
     {
-
+        [TestInitialize]
+        
         [TestMethod]
         public void DisplayPlayerOneIcon_ShouldDisplayIcon()
         {
-            choice = 1;
+            Run();
+            choice = int.Parse(array[choice]);
+            array[choice] = "1";
             string expected = PlayerOne.PlayerOneIcon();
-            string actual = array[0].ToString();
+            string actual = array[choice];
             Assert.AreEqual(expected, actual);
         }
     }
