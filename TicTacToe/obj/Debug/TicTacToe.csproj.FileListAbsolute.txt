@@ -1,0 +1,7 @@
+D:\ElevenFiftyProjects\113SD\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe.config
+D:\ElevenFiftyProjects\113SD\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe
+D:\ElevenFiftyProjects\113SD\TicTacToe\TicTacToe\bin\Debug\TicTacToe.pdb
+D:\ElevenFiftyProjects\113SD\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.AssemblyReference.cache
+D:\ElevenFiftyProjects\113SD\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache
+D:\ElevenFiftyProjects\113SD\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
+D:\ElevenFiftyProjects\113SD\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
