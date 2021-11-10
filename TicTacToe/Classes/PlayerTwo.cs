@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace TicTacToe.Classes
 {
-    class PlayerTwo
+    public class PlayerTwo
     {
+        public static string PlayerTwoIcon()
+        {
+            string oIcon = @"
+                ____  
+               / __ \ 
+              | |  | |
+              | |  | |
+              | |__| |
+               \____/ ";
+            return oIcon;
+        }
     }
 }
