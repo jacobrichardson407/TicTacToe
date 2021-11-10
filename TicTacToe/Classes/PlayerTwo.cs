@@ -11,12 +11,12 @@ namespace TicTacToe.Classes
         public static string PlayerTwoIcon()
         {
             string oIcon = @"
-                ____  
-               / __ \ 
-              | |  | |
-              | |  | |
-              | |__| |
-               \____/ ";
+  ____ 
+ / __ \ 
+| |  | |
+| |  | |
+| |__| |
+ \____/ ";
             return oIcon;
         }
     }
