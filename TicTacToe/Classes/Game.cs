@@ -13,6 +13,7 @@ namespace TicTacToe.Classes
         public static string[] array = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
         public static int choice; // this will hold the integer choice that the user inputs
+        public static int turns = 0;
 
         public static bool playerOneTurn = true;
         public static bool playerTwoTurn = false;
@@ -147,6 +148,7 @@ namespace TicTacToe.Classes
                         
                     }
                     GameWinner();
+                    turns++;
                 } while (playerOneTurn);
                 //player 2 turn
                 do
@@ -255,6 +257,7 @@ namespace TicTacToe.Classes
                         
                     }
                     GameWinner();
+                    turns++;
                 } while (playerTwoTurn);
             }
 
@@ -533,6 +536,21 @@ namespace TicTacToe.Classes
                                        \  /\  /   _| |_| |\  | |\  | |____| | \ \ 
                                         \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
+                TTTBoard();
+            }
+            else if (turns == 8)
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                string draw = @"
+                                                         The game is a:
+                                               _____  _____       __          __
+                                              |  __ \|  __ \     /\ \        / /
+                                              | |  | | |__) |   /  \ \  /\  / / 
+                                              | |  | |  _  /   / /\ \ \/  \/ /  
+                                              | |__| | | \ \  / ____ \  /\  /   
+                                              |_____/|_|  \_\/_/    \_\/  \/";
+                Console.WriteLine(draw);
                 TTTBoard();
             }
             return;
