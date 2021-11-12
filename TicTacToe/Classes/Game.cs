@@ -35,7 +35,6 @@ namespace TicTacToe.Classes
         // run everything in here
         public static void Run()
         {
-            array = new string[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
             choice = int.Parse(array[choice]);
             Console.Clear();
             Console.BackgroundColor = ConsoleColor.Gray;
@@ -307,7 +306,7 @@ namespace TicTacToe.Classes
                                         \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
-                //NewGame();
+                 
             }
             else if (array[1].Contains(PlayerTwo.PlayerTwoIcon()) && array[2].Contains(PlayerTwo.PlayerTwoIcon()) && array[3].Contains(PlayerTwo.PlayerTwoIcon()))
             {
@@ -323,7 +322,7 @@ namespace TicTacToe.Classes
                                         \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
-                //NewGame();
+                 
             }
             // middle row check
             if (array[4].Contains(PlayerOne.PlayerOneIcon()) && array[5].Contains(PlayerOne.PlayerOneIcon()) && array[6].Contains(PlayerOne.PlayerOneIcon()))
@@ -340,7 +339,7 @@ namespace TicTacToe.Classes
                                         \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
-                //NewGame();
+                 
             }
             else if (array[4].Contains(PlayerTwo.PlayerTwoIcon()) && array[5].Contains(PlayerTwo.PlayerTwoIcon()) && array[6].Contains(PlayerTwo.PlayerTwoIcon()))
             {
@@ -356,7 +355,7 @@ namespace TicTacToe.Classes
                                         \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
-                //NewGame();
+                 
             }
             //bottom row check
             if (array[7].Contains(PlayerOne.PlayerOneIcon()) && array[8].Contains(PlayerOne.PlayerOneIcon()) && array[9].Contains(PlayerOne.PlayerOneIcon()))
@@ -373,7 +372,7 @@ namespace TicTacToe.Classes
                                         \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
-                //NewGame();
+                 
             }
             else if (array[7].Contains(PlayerTwo.PlayerTwoIcon()) && array[8].Contains(PlayerTwo.PlayerTwoIcon()) && array[9].Contains(PlayerTwo.PlayerTwoIcon()))
             {
@@ -389,7 +388,7 @@ namespace TicTacToe.Classes
                                         \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
-                //NewGame();
+                 
             }
             //left coloumn check
             if (array[1].Contains(PlayerOne.PlayerOneIcon()) && array[4].Contains(PlayerOne.PlayerOneIcon()) && array[7].Contains(PlayerOne.PlayerOneIcon()))
@@ -406,7 +405,7 @@ namespace TicTacToe.Classes
                                         \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
-                //NewGame();
+                 
             }
             else if (array[1].Contains(PlayerTwo.PlayerTwoIcon()) && array[4].Contains(PlayerTwo.PlayerTwoIcon()) && array[7].Contains(PlayerTwo.PlayerTwoIcon()))
             {
@@ -422,7 +421,7 @@ namespace TicTacToe.Classes
                                         \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
-                //NewGame();
+                 
             }
             //middle column check
             if (array[2].Contains(PlayerOne.PlayerOneIcon()) && array[5].Contains(PlayerOne.PlayerOneIcon()) && array[8].Contains(PlayerOne.PlayerOneIcon()))
@@ -439,7 +438,7 @@ namespace TicTacToe.Classes
                                         \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
-                //NewGame();
+                 
             }
             else if (array[2].Contains(PlayerTwo.PlayerTwoIcon()) && array[5].Contains(PlayerTwo.PlayerTwoIcon()) && array[8].Contains(PlayerTwo.PlayerTwoIcon()))
             {
@@ -471,7 +470,7 @@ namespace TicTacToe.Classes
                                         \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
-                //NewGame();
+                 
             }
             else if (array[3].Contains(PlayerTwo.PlayerTwoIcon()) && array[6].Contains(PlayerTwo.PlayerTwoIcon()) && array[9].Contains(PlayerTwo.PlayerTwoIcon()))
             {
@@ -487,7 +486,7 @@ namespace TicTacToe.Classes
                                         \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
-                //NewGame();
+                 
             }
             //Top left diagonal
             if (array[1].Contains(PlayerOne.PlayerOneIcon()) && array[5].Contains(PlayerOne.PlayerOneIcon()) && array[9].Contains(PlayerOne.PlayerOneIcon()))
@@ -504,7 +503,7 @@ namespace TicTacToe.Classes
                                         \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
-                //NewGame();
+                 
             }
             else if (array[1].Contains(PlayerTwo.PlayerTwoIcon()) && array[5].Contains(PlayerTwo.PlayerTwoIcon()) && array[9].Contains(PlayerTwo.PlayerTwoIcon()))
             {
@@ -520,7 +519,7 @@ namespace TicTacToe.Classes
                                         \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
-                //NewGame();
+                 
             }
             //Top right diagonal
             if (array[3].Contains(PlayerOne.PlayerOneIcon()) && array[5].Contains(PlayerOne.PlayerOneIcon()) && array[7].Contains(PlayerOne.PlayerOneIcon()))
@@ -537,7 +536,7 @@ namespace TicTacToe.Classes
                                         \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
-                //NewGame();
+                 
             }
             else if (array[3].Contains(PlayerTwo.PlayerTwoIcon()) && array[5].Contains(PlayerTwo.PlayerTwoIcon()) && array[7].Contains(PlayerTwo.PlayerTwoIcon()))
             {
@@ -553,7 +552,7 @@ namespace TicTacToe.Classes
                                         \/  \/   |_____|_| \_|_| \_|______|_|  \_\";
                 Console.WriteLine(winner);
                 TTTBoard();
-                //NewGame();
+                 
             }
             else if (turns == 8)
             {
@@ -569,7 +568,7 @@ namespace TicTacToe.Classes
                                               |_____/|_|  \_\/_/    \_\/  \/";
                 Console.WriteLine(draw);
                 TTTBoard();
-                //NewGame();
+                 
             }
             return;
         }
@@ -611,28 +610,5 @@ namespace TicTacToe.Classes
             }
             return null;
         }
-
-        //public static void NewGame()
-        //{
-        //    Console.WriteLine(
-        //        "\n" +
-        //        "\n" +
-        //        "\n");
-        //    Console.WriteLine("                                            Would you like to start a new game???");
-        //    Console.WriteLine("                                                       Type yes or no!");
-        //    Console.WriteLine(
-        //        "\n" +
-        //        "\n" +
-        //        "\n");
-        //    string newGame = Console.ReadLine();
-        //    if (newGame == "yes" || newGame == "Yes")
-        //    {
-        //        Run();
-        //    }
-        //    else if (newGame == "no" || newGame == "No")
-        //    {
-        //        Environment.Exit(0);
-        //    }
-        //}
     }
 }
